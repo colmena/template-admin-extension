@@ -7,7 +7,7 @@ import { IndexComponent } from './components/index.component'
 import { ItemsComponent } from './components/items.component'
 
 const routes: Routes = [ {
-  path: '',
+  path: '<%= this.changeCase.lower(moduleName) %>',
   data: {
     title: '<%= this.changeCase.pascal(moduleName) %>',
   },
